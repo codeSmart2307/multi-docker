@@ -17,11 +17,7 @@ after_success:
   # Log in to Docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push to Docker Hub
-  - docker tag multi-client raneeshgomez/multi-client
   - docker push raneeshgomez/multi-client
-  - docker tag multi-server raneeshgomez/multi-server
   - docker push raneeshgomez/multi-server
-  - docker tag multi-worker raneeshgomez/multi-worker
   - docker push raneeshgomez/multi-worker
-  - docker tag multi-nginx raneeshgomez/multi-nginx
   - docker push raneeshgomez/multi-nginx
