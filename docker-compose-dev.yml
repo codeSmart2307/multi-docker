@@ -49,3 +49,6 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+
+# Run with docker-compose -f docker-compose-dev.yml up
+# Stop with docker-compose -f docker-compose-dev.yml down
